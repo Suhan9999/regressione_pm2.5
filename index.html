@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c19f3db60d68cf98d99ca738f2b780d4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c19f3db60d68cf98d99ca738f2b780d4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c19f3db60d68cf98d99ca738f2b780d4 = L.map(
+                "map_c19f3db60d68cf98d99ca738f2b780d4",
+                {
+                    center: [43.23523963348274, 12.064228690297561],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7e70eedbe3b90503f5033c94f9d5f9e1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7e70eedbe3b90503f5033c94f9d5f9e1.addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var marker_0006b9bacf31fcaa6bdc35593a22ed8a = L.marker(
+                [43.8766666666667, 10.7691666666667],
+                {
+}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var icon_dcb92d12db52a3ae63632769ac8fac69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0006b9bacf31fcaa6bdc35593a22ed8a.setIcon(icon_dcb92d12db52a3ae63632769ac8fac69);
+        
+    
+        var popup_3e69fc8a1d30e825cd27b823704b8c6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9401c4525ec65f84d3ada4e8dc94edc6 = $(`<div id="html_9401c4525ec65f84d3ada4e8dc94edc6" style="width: 100.0%; height: 100.0%;">Comune: Montecatini-Terme<br>Previsione PM2.5 2023: 504.00<br>Previsione PM2.5 2033 con Depuratori: 301.76</div>`)[0];
+                popup_3e69fc8a1d30e825cd27b823704b8c6b.setContent(html_9401c4525ec65f84d3ada4e8dc94edc6);
+            
+        
+
+        marker_0006b9bacf31fcaa6bdc35593a22ed8a.bindPopup(popup_3e69fc8a1d30e825cd27b823704b8c6b)
+        ;
+
+        
+    
+    
+            var marker_581081c0818377ed4b6b8102f7ac9e82 = L.marker(
+                [45.2447222222222, 11.7511111111111],
+                {
+}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var icon_a2ad10aa9a6d2b138c4f60c91202454a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_581081c0818377ed4b6b8102f7ac9e82.setIcon(icon_a2ad10aa9a6d2b138c4f60c91202454a);
+        
+    
+        var popup_309bad68982b32f1b2d4c26414e3da1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abd4b230906fb94cf5c480bd01e5b601 = $(`<div id="html_abd4b230906fb94cf5c480bd01e5b601" style="width: 100.0%; height: 100.0%;">Comune: Monselice<br>Previsione PM2.5 2023: 113.67<br>Previsione PM2.5 2033 con Depuratori: 68.06</div>`)[0];
+                popup_309bad68982b32f1b2d4c26414e3da1b.setContent(html_abd4b230906fb94cf5c480bd01e5b601);
+            
+        
+
+        marker_581081c0818377ed4b6b8102f7ac9e82.bindPopup(popup_309bad68982b32f1b2d4c26414e3da1b)
+        ;
+
+        
+    
+    
+            var marker_b19b30dd900834bd400c70b5766abf72 = L.marker(
+                [45.2511111111111, 9.62222222222222],
+                {
+}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var icon_ad6425e90c16d93a2c06c194eee25412 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b19b30dd900834bd400c70b5766abf72.setIcon(icon_ad6425e90c16d93a2c06c194eee25412);
+        
+    
+        var popup_43e18ca14d51b74a656f0b9337c73cfd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a36744097925196bad52cad6809b96d = $(`<div id="html_5a36744097925196bad52cad6809b96d" style="width: 100.0%; height: 100.0%;">Comune: Turano Lodigiano<br>Previsione PM2.5 2023: 96.00<br>Previsione PM2.5 2033 con Depuratori: 57.48</div>`)[0];
+                popup_43e18ca14d51b74a656f0b9337c73cfd.setContent(html_5a36744097925196bad52cad6809b96d);
+            
+        
+
+        marker_b19b30dd900834bd400c70b5766abf72.bindPopup(popup_43e18ca14d51b74a656f0b9337c73cfd)
+        ;
+
+        
+    
+    
+            var marker_33097075d82542b05c7677a2c30f4841 = L.marker(
+                [40.1325, 18.3041666666667],
+                {
+}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var icon_50cd609660b3c4dd5972f118900a29b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_33097075d82542b05c7677a2c30f4841.setIcon(icon_50cd609660b3c4dd5972f118900a29b3);
+        
+    
+        var popup_cb8478ff8f2cf96976350dc8407011ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b201966b1c90ae47a43498fd910a5b86 = $(`<div id="html_b201966b1c90ae47a43498fd910a5b86" style="width: 100.0%; height: 100.0%;">Comune: Maglie<br>Previsione PM2.5 2023: 55.00<br>Previsione PM2.5 2033 con Depuratori: 32.93</div>`)[0];
+                popup_cb8478ff8f2cf96976350dc8407011ec.setContent(html_b201966b1c90ae47a43498fd910a5b86);
+            
+        
+
+        marker_33097075d82542b05c7677a2c30f4841.bindPopup(popup_cb8478ff8f2cf96976350dc8407011ec)
+        ;
+
+        
+    
+    
+            var marker_ebcaf7fb70bee2f9fa9fcb2d0a4507cd = L.marker(
+                [44.5263888888889, 10.8777777777778],
+                {
+}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var icon_50e0db2e57942e849f8197dce9564d5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ebcaf7fb70bee2f9fa9fcb2d0a4507cd.setIcon(icon_50e0db2e57942e849f8197dce9564d5d);
+        
+    
+        var popup_5f3158ede3ece0f824744ce370708cbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17c70c28f3e366b6d591d3f760790a71 = $(`<div id="html_17c70c28f3e366b6d591d3f760790a71" style="width: 100.0%; height: 100.0%;">Comune: Maranello<br>Previsione PM2.5 2023: 44.67<br>Previsione PM2.5 2033 con Depuratori: 26.74</div>`)[0];
+                popup_5f3158ede3ece0f824744ce370708cbc.setContent(html_17c70c28f3e366b6d591d3f760790a71);
+            
+        
+
+        marker_ebcaf7fb70bee2f9fa9fcb2d0a4507cd.bindPopup(popup_5f3158ede3ece0f824744ce370708cbc)
+        ;
+
+        
+    
+    
+            var marker_472b17e5ef0942e4b9033ebf92b6cdc3 = L.marker(
+                [46.26733, 11.22711],
+                {
+}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var icon_a2b461c6a17057fc38f3be401e22e343 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_472b17e5ef0942e4b9033ebf92b6cdc3.setIcon(icon_a2b461c6a17057fc38f3be401e22e343);
+        
+    
+        var popup_58f83606decc1b6b0643c2773b271ca3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_565269b0f06de13422d233d5ef48a693 = $(`<div id="html_565269b0f06de13422d233d5ef48a693" style="width: 100.0%; height: 100.0%;">Comune: Cortina sulla strada del vino<br>Previsione PM2.5 2023: 40.00<br>Previsione PM2.5 2033 con Depuratori: 23.95</div>`)[0];
+                popup_58f83606decc1b6b0643c2773b271ca3.setContent(html_565269b0f06de13422d233d5ef48a693);
+            
+        
+
+        marker_472b17e5ef0942e4b9033ebf92b6cdc3.bindPopup(popup_58f83606decc1b6b0643c2773b271ca3)
+        ;
+
+        
+    
+    
+            var marker_c6bcf6c881a9fde414e41ca7ced27dde = L.marker(
+                [45.809444, 9.222778],
+                {
+}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var icon_c86f013f78c74f78fc3e937e16976d6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c6bcf6c881a9fde414e41ca7ced27dde.setIcon(icon_c86f013f78c74f78fc3e937e16976d6a);
+        
+    
+        var popup_b1faae530a609b26828f0818049ef969 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b59b963e33f2a78deb7715896975d8ea = $(`<div id="html_b59b963e33f2a78deb7715896975d8ea" style="width: 100.0%; height: 100.0%;">Comune: Erba<br>Previsione PM2.5 2023: 40.00<br>Previsione PM2.5 2033 con Depuratori: 23.95</div>`)[0];
+                popup_b1faae530a609b26828f0818049ef969.setContent(html_b59b963e33f2a78deb7715896975d8ea);
+            
+        
+
+        marker_c6bcf6c881a9fde414e41ca7ced27dde.bindPopup(popup_b1faae530a609b26828f0818049ef969)
+        ;
+
+        
+    
+    
+            var marker_939956aea1ae7d8aeb7f699627b8d59f = L.marker(
+                [41.478889, 14.033333],
+                {
+}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var icon_b7e56c54571e407e543a7d3002e39a11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_939956aea1ae7d8aeb7f699627b8d59f.setIcon(icon_b7e56c54571e407e543a7d3002e39a11);
+        
+    
+        var popup_77d2731c263344a8cd6e1def6639940f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8957b2b33bb93cd09e2779d8fdbd5a31 = $(`<div id="html_8957b2b33bb93cd09e2779d8fdbd5a31" style="width: 100.0%; height: 100.0%;">Comune: Venafro<br>Previsione PM2.5 2023: 38.03<br>Previsione PM2.5 2033 con Depuratori: 22.77</div>`)[0];
+                popup_77d2731c263344a8cd6e1def6639940f.setContent(html_8957b2b33bb93cd09e2779d8fdbd5a31);
+            
+        
+
+        marker_939956aea1ae7d8aeb7f699627b8d59f.bindPopup(popup_77d2731c263344a8cd6e1def6639940f)
+        ;
+
+        
+    
+    
+            var marker_33c9d76d27b1f623efec6205429dc033 = L.marker(
+                [43.26361, 13.75556],
+                {
+}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var icon_979e3237419e9d4f8f264e35d6b91d4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_33c9d76d27b1f623efec6205429dc033.setIcon(icon_979e3237419e9d4f8f264e35d6b91d4e);
+        
+    
+        var popup_89d048477c3b27af468599e73e24a278 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c63bac7a9ebbb0a1a2cc0a267bf78609 = $(`<div id="html_c63bac7a9ebbb0a1a2cc0a267bf78609" style="width: 100.0%; height: 100.0%;">Comune: Porto Sant'Elpidio<br>Previsione PM2.5 2023: 38.00<br>Previsione PM2.5 2033 con Depuratori: 22.75</div>`)[0];
+                popup_89d048477c3b27af468599e73e24a278.setContent(html_c63bac7a9ebbb0a1a2cc0a267bf78609);
+            
+        
+
+        marker_33c9d76d27b1f623efec6205429dc033.bindPopup(popup_89d048477c3b27af468599e73e24a278)
+        ;
+
+        
+    
+    
+            var marker_dcef60277945290106edfbb8c0d4bcad = L.marker(
+                [46.58967, 11.43317],
+                {
+}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            var icon_44ff02fa773333c48d32d77054c1b05b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dcef60277945290106edfbb8c0d4bcad.setIcon(icon_44ff02fa773333c48d32d77054c1b05b);
+        
+    
+        var popup_94da099cab0961a0eba9be6af2a68c66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b58df930c1760ebb340dafabbfe8dee = $(`<div id="html_5b58df930c1760ebb340dafabbfe8dee" style="width: 100.0%; height: 100.0%;">Comune: Renon<br>Previsione PM2.5 2023: 34.70<br>Previsione PM2.5 2033 con Depuratori: 20.78</div>`)[0];
+                popup_94da099cab0961a0eba9be6af2a68c66.setContent(html_5b58df930c1760ebb340dafabbfe8dee);
+            
+        
+
+        marker_dcef60277945290106edfbb8c0d4bcad.bindPopup(popup_94da099cab0961a0eba9be6af2a68c66)
+        ;
+
+        
+    
+    
+            var circle_754ab67b1ce830feba4b6a43ca76e75e = L.circle(
+                [43.8766666666667, 10.7691666666667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            circle_754ab67b1ce830feba4b6a43ca76e75e.bindTooltip(
+                `<div>
+                     Comune: Montecatini-Terme<br>Previsione PM2.5 2023: 504.00<br>Previsione PM2.5 2033 con Depuratori: 301.76
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_ba463c0c9455edcc400be1fc1f92070d = L.circle(
+                [45.2447222222222, 11.7511111111111],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            circle_ba463c0c9455edcc400be1fc1f92070d.bindTooltip(
+                `<div>
+                     Comune: Monselice<br>Previsione PM2.5 2023: 113.67<br>Previsione PM2.5 2033 con Depuratori: 68.06
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_21ee11be8b520aa459ef47c4220d14bf = L.circle(
+                [45.2511111111111, 9.62222222222222],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            circle_21ee11be8b520aa459ef47c4220d14bf.bindTooltip(
+                `<div>
+                     Comune: Turano Lodigiano<br>Previsione PM2.5 2023: 96.00<br>Previsione PM2.5 2033 con Depuratori: 57.48
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_7695b8584d36a138dbe25ba98fcfe6f9 = L.circle(
+                [40.1325, 18.3041666666667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            circle_7695b8584d36a138dbe25ba98fcfe6f9.bindTooltip(
+                `<div>
+                     Comune: Maglie<br>Previsione PM2.5 2023: 55.00<br>Previsione PM2.5 2033 con Depuratori: 32.93
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_9485be99b246c7584a470dd9aecbe32c = L.circle(
+                [44.5263888888889, 10.8777777777778],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            circle_9485be99b246c7584a470dd9aecbe32c.bindTooltip(
+                `<div>
+                     Comune: Maranello<br>Previsione PM2.5 2023: 44.67<br>Previsione PM2.5 2033 con Depuratori: 26.74
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_4226ca79c72c602ae984f51b326b5b6d = L.circle(
+                [46.26733, 11.22711],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            circle_4226ca79c72c602ae984f51b326b5b6d.bindTooltip(
+                `<div>
+                     Comune: Cortina sulla strada del vino<br>Previsione PM2.5 2023: 40.00<br>Previsione PM2.5 2033 con Depuratori: 23.95
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_4d4c4c2034c512f48427de7586a7b8b8 = L.circle(
+                [45.809444, 9.222778],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            circle_4d4c4c2034c512f48427de7586a7b8b8.bindTooltip(
+                `<div>
+                     Comune: Erba<br>Previsione PM2.5 2023: 40.00<br>Previsione PM2.5 2033 con Depuratori: 23.95
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a77d4f1be4b1671b9c86b4345b8ceb94 = L.circle(
+                [41.478889, 14.033333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            circle_a77d4f1be4b1671b9c86b4345b8ceb94.bindTooltip(
+                `<div>
+                     Comune: Venafro<br>Previsione PM2.5 2023: 38.03<br>Previsione PM2.5 2033 con Depuratori: 22.77
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a23fbed71c7806b4157f14a6d2b33656 = L.circle(
+                [43.26361, 13.75556],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            circle_a23fbed71c7806b4157f14a6d2b33656.bindTooltip(
+                `<div>
+                     Comune: Porto Sant'Elpidio<br>Previsione PM2.5 2023: 38.00<br>Previsione PM2.5 2033 con Depuratori: 22.75
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_610d9a8632af6c382ba3cec9a82d9587 = L.circle(
+                [46.58967, 11.43317],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_c19f3db60d68cf98d99ca738f2b780d4);
+        
+    
+            circle_610d9a8632af6c382ba3cec9a82d9587.bindTooltip(
+                `<div>
+                     Comune: Renon<br>Previsione PM2.5 2023: 34.70<br>Previsione PM2.5 2033 con Depuratori: 20.78
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
